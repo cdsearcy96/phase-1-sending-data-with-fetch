@@ -1,5 +1,6 @@
 // Add your code here
-const formData = {
+function submitFormData() {
+    const formData = {
     name: "Byron",
     email: "byronb@gamil.com",
   };
@@ -24,4 +25,6 @@ const formData = {
         alert("Bad things!");
         console.log(error.message);
       });
+    }
+submitFormData();
 
