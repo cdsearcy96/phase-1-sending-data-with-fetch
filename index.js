@@ -13,7 +13,7 @@ const formData = {
     body: JSON.stringify(formData),
   };
   
-  fetch("http://localhost:3000/users", submitData)
+  return fetch("http://localhost:3000/users", submitData)
     .then(function (response) {
       return response.json();
     })
@@ -25,4 +25,3 @@ const formData = {
         console.log(error.message);
       });
 
-return fetch(submitData);
